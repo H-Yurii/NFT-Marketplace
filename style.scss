@@ -49,7 +49,7 @@
 
     &__mobile-line {
         position: absolute;
-        width: 100%;
+        width: 90%;
         height: 4px;
         background-color: #fff;
         top: 45%;
@@ -59,21 +59,21 @@
     &__mobile-line::after {
         position: absolute;
         content: '';
-        width: 100%;
         height: 4px;
         background-color: #fff;
         top: 15px;
         transition: 0.3s;
+        width: 60%;
     }
 
     &__mobile-line::before {
         position: absolute;
         content: '';
-        width: 100%;
         height: 4px;
         background-color: #fff;
         top: -15px;
         transition: 0.3s;
+        width: 80%;
     }
 
     &__header-input[type="checkbox"]:checked~.fullskrin__header-label .fullskrin__header-mobile .fullskrin__mobile-line {
@@ -87,7 +87,8 @@
     }
 
     &__header-input[type="checkbox"]:checked~.fullskrin__header-label .fullskrin__header-mobile .fullskrin__mobile-line::before {
-        transform: rotate(90deg) translateX(15px);
+        transform: rotate(90deg) translateX(14px);
+        width: 100%;
         background-color: #ff0101;
     }
 
