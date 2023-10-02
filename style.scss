@@ -99,8 +99,8 @@ body {
 
     &__header-input[type="checkbox"]:checked~.fullskrin__nav {
         position: absolute;
-        width: 200px;
-        height: 400px;
+        width: 190px;
+        height: 320px;
         right: 10%;
         top: 20px;
         background-color: #5a5a5a;
@@ -1273,7 +1273,7 @@ body {
     }
 
     .fullskrin__nav-link {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .fullskrin__button {
