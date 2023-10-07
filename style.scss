@@ -934,6 +934,70 @@ body {
     border-radius: 5px;
 }
 
+.section-3 {
+    margin: 0 auto;
+    margin-top: 160px;
+    max-width: 1100px;
+
+    &__title {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+    &__box-txt {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__box-item {
+        background-color: rgba(59, 59, 59, 1);
+        border-radius: 20px;
+        height: 315px;
+        position: relative;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    &__item-block {
+        padding: 25px 30px;
+    }
+
+    &__box-hover {
+        position: absolute;
+        backdrop-filter: blur(8px);
+        width: 240px;
+        height: 240px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.8s;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    &__box-item:hover &__box-hover {
+        opacity: 0;
+    }
+}
+
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
     .fullskrin {
