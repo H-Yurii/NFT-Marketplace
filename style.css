@@ -1320,6 +1320,154 @@ body {
   display: none;
 }
 
+.footer {
+  margin-top: 80px;
+  background-color: rgb(59, 59, 59);
+  padding: 40px 0px;
+}
+.footer__body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer__body-block {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__block-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer__item-img {
+  width: 243px;
+  height: 32px;
+}
+.footer__item-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__block-item:nth-child(1) {
+  max-width: 250px;
+}
+.footer__block-item:nth-child(3) {
+  max-width: 420px;
+}
+.footer__item-images {
+  margin-top: 15px;
+}
+.footer__block-item:nth-child(3) .footer__item-link {
+  width: 330px;
+}
+.footer__info-login {
+  margin-top: 20px;
+  display: flex;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 0px 0px 0px 20px;
+  max-width: 425px;
+}
+.footer__login-subscribe {
+  display: flex;
+  background-color: rgb(162, 89, 255);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 50px;
+}
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(133, 133, 132);
+  margin-top: 30px;
+}
+.footer__item-link {
+  color: #CCC;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 20px;
+}
+.footer__item-link:hover {
+  color: #fff;
+}
+.footer__item-title {
+  color: #FFF;
+  font-family: "Space Mono", monospace;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.footer__info {
+  color: #CCC;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin-top: 20px;
+}
+.footer__2-login-input {
+  width: 300px;
+  padding: 16px 20px;
+  border-radius: 20px;
+}
+.footer__2-login-input::-moz-placeholder {
+  color: var(--Background, #2B2B2B);
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.footer__2-login-input::placeholder {
+  color: var(--Background, #2B2B2B);
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.footer__2-login-subscribe {
+  width: 300px;
+  height: 45px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(162, 89, 255);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.footer__2-login-subscribe:hover .footer__subscribe-text {
+  transform: scale(1.1);
+}
+.footer__2-login-subscribe:hover .footer__subscribe-img {
+  transform: rotate(360deg) translateX(-10px);
+}
+.footer__subscribe-img {
+  transition: 0.5s;
+}
+.footer__subscribe-text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  transition: 0.5s;
+}
+.footer__2-info-login {
+  display: none;
+}
+
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
   .fullskrin {
@@ -1422,6 +1570,9 @@ body {
   }
   .main-box {
     padding: 0 20px;
+  }
+  .footer {
+    padding: 40px 20px;
   }
 }
 @media (max-width: 1080px) {
@@ -1627,6 +1778,17 @@ body {
   .section-7 {
     padding: 50px;
     margin-top: 80px;
+  }
+}
+@media (max-width: 910px) {
+  .footer__body-block {
+    flex-direction: column;
+  }
+  .footer__block-item:nth-child(2) {
+    margin-top: 20px;
+  }
+  .footer__block-item:nth-child(3) {
+    margin-top: 30px;
   }
 }
 @media (max-width: 870px) {
@@ -1956,6 +2118,16 @@ body {
   .section-7__login-input::placeholder {
     font-size: 16px;
   }
+  .footer__body {
+    max-width: 420px;
+  }
+  .footer__info-login {
+    display: none;
+  }
+  .footer__2-info-login {
+    display: block;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 754px) {
   .section-2__block-creator:nth-child(2) {
@@ -2234,5 +2406,12 @@ body {
   }
   .section-4__paragraph-txt {
     font-size: 16px;
+  }
+  .section-7 {
+    padding: 0px;
+    width: 300px;
+  }
+  .main-box {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */
