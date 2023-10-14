@@ -955,24 +955,20 @@ body {
 }
 .section-4__box-title {
   color: var(--White, #FFF);
-  /* H3 - Work Sans */
   font-family: "Work Sans", sans-serif;
   font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
-  /* 45.6px */
   text-transform: capitalize;
 }
 .section-4__box-txt {
   color: var(--White, #FFF);
-  /* Body Text- Work Sans */
   font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  /* 35.2px */
   text-transform: capitalize;
   margin-top: 10px;
 }
@@ -984,49 +980,40 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  /* 22.4px */
   transition: 0.5s;
 }
 .section-4__item-title {
   color: var(--White, #FFF);
-  /* H5 - Work Sans */
   font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  /* 30.8px */
   text-transform: capitalize;
 }
 .section-4__item-block-text {
   color: var(--White, #FFF);
-  /* Base (Body) - Space Mono */
   font-family: "Space Mono", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  /* 22.4px */
 }
 .section-4__paragraph-text {
   color: #858584;
-  /* Caption - Space Mono */
   font-family: "Space Mono", monospace;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
-  /* 13.2px */
 }
 .section-4__paragraph-txt {
   color: var(--White, #FFF);
-  /* Base (Body) - Space Mono */
   font-family: "Space Mono", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  /* 22.4px */
 }
 
 .section-5 {
@@ -1069,7 +1056,7 @@ body {
 .section-5__item-block-text {
   color: var(--White, #FFF);
   text-align: center;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1087,15 +1074,10 @@ body {
   background-color: #3B3B3B;
   padding: 10px 30px 30px 30px;
   cursor: pointer;
-  transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.section-5__block-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 10px 30px #511989;
 }
 .section-5__2-block-item {
   display: flex;
