@@ -1033,7 +1033,7 @@ body {
     }
 
     &__box-button:hover &__button-img {
-        transform: rotate(360deg) translateX(-10px);
+        transform: rotate(360deg);
     }
 
     &__button-img {
@@ -1231,6 +1231,7 @@ body {
         background-color: #3B3B3B;
         padding: 10px 30px 30px 30px;
         cursor: pointer;
+        transition: 0.5s;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1253,6 +1254,252 @@ body {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
+    }
+}
+
+.section-6 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-image: url(./Picture/NFT-Mushrooms.jpg);
+    background-size: cover;
+    padding: 300px 40px 60px 40px;
+
+    &__block {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__info-shroomie {
+        background-color: rgba(59, 59, 59, 1);
+        width: 150px;
+        height: 45px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__button-img {
+        transform: translateX(-10px);
+    }
+
+    &__info-button {
+        background-color: #fff;
+        border-radius: 20px;
+        width: 200px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-top: 30px;
+    }
+
+    &__info-button:hover {
+        transform: scale(1.1);
+        background-color: #3b3b3b;
+    }
+
+    &__info-button:hover &__button-txt {
+        color: #fff;
+        transform: scale(1.1);
+    }
+
+    &__info-button:hover &__button-img {
+        transform: translateX(-10px) rotate(360deg);
+    }
+
+    &__button-img {
+        transition: 0.5s;
+    }
+
+    &__block-clock {
+        width: 315px;
+        height: 145px;
+        background-color: rgba(59, 59, 59, 0.827);
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    &__clock-text {
+        color: var(--Text, #FFF);
+        font-family: 'Space Mono', monospace;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+    }
+
+    &__info-title {
+        color: #FFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 51px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+
+    &__button-text {
+        color: #FFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &__button-txt {
+        color: var(--Background, #000000);
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        transition: 0.5s;
+    }
+
+    &__2 {
+        background-image: url(./Picture/NFT-Mushrooms.jpg);
+        background-size: cover;
+        height: 600px;
+        padding: 120px 0px 40px 0px;
+        display: none;
+        margin-top: 60px;
+    }
+
+    &__2-block {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    &__2-block &__block-clock {
+        margin-top: 30px;
+    }
+
+    &__2-block &__info-title {
+        font-size: 45px;
+    }
+}
+
+.section-7 {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    padding: 60px;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box-info {
+        max-width: 425px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    &__info-login {
+        display: flex;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 20px;
+        justify-content: space-between;
+        padding: 0px 0px 0px 20px;
+        max-width: 425px;
+    }
+
+    &__login-subscribe {
+        display: flex;
+        background-color: rgba(162, 89, 255, 1);
+        border-radius: 20px;
+        align-items: center;
+        padding: 0 50px;
+        cursor: pointer;
+    }
+
+    &__login-subscribe:hover &__subscribe-text {
+        color: #fff;
+        transform: scale(1.1);
+    }
+
+    &__login-subscribe:hover &__subscribe-img {
+        transform: translateX(-10px) rotate(360deg);
+    }
+
+    &__subscribe-img {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        transition: 0.5s;
+    }
+
+    &__login-input {
+        border-radius: 20px;
+    }
+
+    &__info-title {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+    &__info-text {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    &__login-input {
+        color: var(--Background, #2B2B2B);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &__login-input::placeholder {
+        color: var(--Background, #2B2B2B);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &__subscribe-text {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        transition: 0.5s;
+    }
+
+    &__2-info-login {
+        display: none;
     }
 }
 
@@ -1297,6 +1544,24 @@ body {
 
     .main {
         padding: 0 20px;
+    }
+
+    .section-1__box-card {
+        width: 300px;
+    }
+
+    .section-1__card-img {
+        width: 300px;
+    }
+
+    .section-1__images-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .section-1__more {
+        width: 90px;
+        height: 90px;
     }
 
     .section-2__block-creator {
@@ -1365,6 +1630,10 @@ body {
     .fullskrin__create-button {
         height: 45px;
     }
+
+    .main-box {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -1378,6 +1647,14 @@ body {
 
     .section-5__block-img {
         width: 200px;
+    }
+
+    .section-7__box-img {
+        width: 400px;
+    }
+
+    .section-7__box-info {
+        width: 400px;
     }
 }
 
@@ -1532,6 +1809,79 @@ body {
     .section-5__block-img {
         width: 160px;
     }
+
+    .section-7__info-title {
+        font-size: 35px;
+    }
+
+    .section-7__info-text {
+        font-size: 20px;
+    }
+
+    .section-7__box-info {
+        width: 390px;
+    }
+
+    .section-7 {
+        padding: 30px 60px 30px 30px;
+    }
+
+    .section-7__login-subscribe {
+        width: 200px;
+    }
+}
+
+@media (max-width: 950px) {
+    .section-7__info-login {
+        display: none;
+    }
+
+    .section-7__2-info-login {
+        display: block;
+    }
+
+    .section-7__login-input {
+        width: 320px;
+        padding: 16px 20px;
+    }
+
+    .section-7__login-input::placeholder {
+        color: var(--Background, #2B2B2B);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .section-7__login-subscribe {
+        width: 320px;
+        height: 45px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-7__box-info {
+        width: 350px;
+    }
+
+    .section-7__box-img {
+        width: 350px;
+        height: 330px;
+    }
+
+    .section-7 {
+        padding: 50px;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 870px) {
+    .section-7 {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -1594,6 +1944,31 @@ body {
 
     .section-4__block-img {
         width: 310px;
+    }
+
+    .section-6__info-title {
+        font-size: 40px;
+    }
+
+    .section-7__box-img {
+        width: 300px;
+        height: 280px;
+    }
+
+    .section-7__info-title {
+        font-size: 33px;
+    }
+
+    .section-7__login-input {
+        width: 300px;
+    }
+
+    .section-7__login-subscribe {
+        width: 300px;
+    }
+
+    .section-7__info-text {
+        font-size: 18px;
     }
 }
 
@@ -1867,6 +2242,46 @@ body {
     .section-5__block-img {
         width: 250px;
     }
+
+    .section-7__box {
+        flex-direction: column;
+    }
+
+    .section-7 {
+        width: 330px;
+        background-color: transparent;
+    }
+
+    .section-7__box {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-7__box-info {
+        width: 300px;
+    }
+
+    .section-7__info-title {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    .section-7__info-text {
+        margin-top: 10px;
+        text-transform: none;
+    }
+
+    .section-7__2-info-login {
+        margin-top: 40px;
+    }
+
+    .section-7__login-input {
+        height: 45px;
+    }
+
+    .section-7__login-input::placeholder {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 754px) {
@@ -1929,6 +2344,14 @@ body {
 
     .section-5__box-text {
         font-size: 20px;
+    }
+
+    .section-6 {
+        display: none;
+    }
+
+    .section-6__2 {
+        display: block;
     }
 }
 
@@ -2035,6 +2458,10 @@ body {
     .section-5__item-block-text {
         font-size: 16px;
         text-align: left;
+    }
+
+    .section-6__2 .section-6__info-title {
+        font-size: 38px;
     }
 }
 
