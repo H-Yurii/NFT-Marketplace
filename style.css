@@ -1639,7 +1639,7 @@ body {
 
 .s-footer {
   background-color: rgb(59, 59, 59);
-  padding: 40px 0px;
+  padding: 40px 20px;
 }
 
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
@@ -2361,6 +2361,9 @@ body {
     text-transform: none;
     font-size: 22px;
     text-align: center;
+  }
+  .footer__body {
+    margin: 0px;
   }
 }
 @media (max-width: 754px) {
