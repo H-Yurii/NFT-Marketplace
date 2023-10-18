@@ -1232,6 +1232,7 @@ body {
         border-radius: 20px;
         transition: 0.5s;
         cursor: pointer;
+        max-width: 330px;
     }
 
     &__block-item:nth-child(1):hover {
@@ -1853,6 +1854,59 @@ body {
     padding: 40px 20px;
 }
 
+.marketplace {
+    padding: 80px;
+
+    &__info {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__nft-item {
+        height: 500px;
+        background-color: rgba(59, 59, 59, 1);
+        border-radius: 20px;
+        transition: 0.5s;
+        cursor: pointer;
+        max-width: 330px;
+        margin-top: 30px;
+    }
+
+    &__section-nft {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__nft-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    &__info-title {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 51px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: capitalize;
+    }
+
+    &__info-text {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-top: 10px;
+    }
+}
+
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
     .fullskrin {
@@ -1996,6 +2050,20 @@ body {
 
     .fullskrin__block-info {
         margin-left: 40px;
+    }
+
+    .marketplace {
+        padding: 80px 20px;
+    }
+
+    .fullskrin__header {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1044px) {
+    .marketplace__nft-item:nth-child(3) {
+        display: none;
     }
 }
 
@@ -2278,6 +2346,14 @@ body {
     .footer__block-item:nth-child(3) {
         margin-top: 30px;
     }
+
+    .marketplace__nft-item .section-4__block-img {
+        width: 300px;
+    }
+
+    .marketplace__nft-item {
+        height: 470px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -2371,6 +2447,22 @@ body {
 
     .section-7__info-text {
         font-size: 18px;
+    }
+
+    .marketplace__nft-item .section-4__block-img {
+        width: 280px;
+    }
+
+    .marketplace__nft-item {
+        height: 440px;
+    }
+
+    .marketplace__info-title {
+        font-size: 38px;
+    }
+
+    .marketplace__info-text {
+        font-size: 20px;
     }
 }
 
@@ -2816,6 +2908,16 @@ body {
     }
 }
 
+@media (max-width: 614px) {
+    .marketplace__nft-item:nth-child(3) {
+        display: block;
+    }
+
+    .marketplace__section-nft {
+        justify-content: center;
+    }
+}
+
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
 @media (max-width: 575px) {
 
@@ -2939,6 +3041,10 @@ body {
         height: 300px;
         width: 300px;
         left: 0%;
+    }
+
+    .marketplace__section-nft {
+        margin-top: 40px;
     }
 }
 
@@ -3173,6 +3279,31 @@ body {
 
     .fullskrin__thanks-title:nth-child(1) {
         font-size: 28px;
+    }
+
+    .marketplace__nft-item {
+        width: 270px;
+        height: 420px;
+    }
+
+    .marketplace__nft-item .section-4__block-img {
+        width: 270px;
+    }
+
+    .marketplace__nft-item .section-4__item-box {
+        padding: 10px 15px;
+    }
+
+    .marketplace__info-title {
+        font-size: 28px;
+    }
+
+    .marketplace__info-text {
+        font-size: 18px;
+    }
+
+    .marketplace__section-nft {
+        margin-top: 20px;
     }
 }
 
@@ -3418,5 +3549,18 @@ body {
         left: 3%;
         width: 250px;
         padding: 10px;
+    }
+
+    .marketplace__nft-item {
+        width: 250px;
+        height: 400px;
+    }
+
+    .marketplace__nft-item .section-4__block-img {
+        width: 250px;
+    }
+
+    .marketplace__nft-item .section-4__item-box {
+        padding: 10px 15px;
     }
 }
