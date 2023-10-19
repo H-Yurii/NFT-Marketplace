@@ -1696,6 +1696,134 @@ body {
   margin-top: 10px;
 }
 
+.ranking {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ranking__section-header {
+  border-radius: 20px;
+  border: 1px solid #3B3B3B;
+  padding: 12px 20px;
+}
+.ranking__header-body {
+  display: flex;
+  justify-content: space-between;
+}
+.ranking__header-rank {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.ranking__header-stats {
+  display: flex;
+  max-width: 600px;
+  gap: 175px;
+}
+.ranking__section-item {
+  background-color: rgb(59, 59, 59);
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.ranking__section-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px #000;
+}
+.ranking__item-rank {
+  display: flex;
+  max-width: 430px;
+  align-items: center;
+  gap: 20px;
+}
+.ranking__artist-img {
+  width: 60px;
+  height: 60px;
+}
+.ranking__rank-artist {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ranking__rank-block {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--caption-label-text, #858584);
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.ranking__item-stats {
+  display: flex;
+  max-width: 600px;
+  gap: 200px;
+}
+.ranking__info-title {
+  color: var(--White, #FFF);
+  font-family: "Work Sans", sans-serif;
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+.ranking__info-text {
+  color: var(--White, #FFF);
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.ranking__header-text {
+  color: var(--caption-label-text, #858584);
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.ranking__artist-name {
+  color: #FFF;
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.ranking__stats-text:nth-child(1) {
+  color: var(--Green, #00AC4F);
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.ranking__stats-text {
+  color: var(--Text, #FFF);
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.ranking .marketplace__info {
+  padding: 80px 0;
+}
+
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
   .fullskrin {
@@ -1815,6 +1943,9 @@ body {
   .fullskrin__header {
     padding: 20px;
   }
+  .ranking {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 1044px) {
   .marketplace__nft-item:nth-child(3) {
@@ -1842,6 +1973,12 @@ body {
   }
   .fullskrin__text-txt {
     font-size: 18px;
+  }
+  .ranking__item-stats {
+    gap: 150px;
+  }
+  .ranking__header-stats {
+    gap: 125px;
   }
 }
 /* Стилі для середніх екранів (дисплей максимум 991рх) */
@@ -1997,6 +2134,12 @@ body {
   .fullskrin__create-sub {
     width: 300px;
   }
+  .ranking__item-stats {
+    gap: 110px;
+  }
+  .ranking__header-stats {
+    gap: 85px;
+  }
 }
 @media (max-width: 950px) {
   .section-7__info-login {
@@ -2151,6 +2294,28 @@ body {
   }
   .marketplace__nft-item {
     height: 470px;
+  }
+  .ranking__header-stats .ranking__header-text:nth-child(2) {
+    display: none;
+  }
+  .ranking__item-stats .ranking__stats-text:nth-child(2) {
+    display: none;
+  }
+  .ranking__header-stats {
+    gap: 115px;
+  }
+  .ranking__rank-block {
+    background-color: transparent;
+  }
+  .ranking__section-item:hover .ranking__rank-block {
+    background-color: rgb(43, 43, 43);
+  }
+  .ranking__rank-block {
+    transition: 0.5s;
+  }
+  .ranking__artist-img {
+    width: 30px;
+    height: 30px;
   }
 }
 /* Стилі для малих екранів (дисплей максимум 767рх) */
@@ -2515,12 +2680,26 @@ body {
     margin-top: 60px;
   }
 }
+@media (max-width: 700px) {
+  .ranking__header-stats {
+    gap: 65px;
+  }
+  .ranking__item-stats {
+    gap: 60px;
+  }
+}
 @media (max-width: 614px) {
   .marketplace__nft-item:nth-child(3) {
     display: block;
   }
   .marketplace__section-nft {
     justify-content: center;
+  }
+  .ranking__header-stats .ranking__header-text:nth-child(1) {
+    display: none;
+  }
+  .ranking__item-stats .ranking__stats-text:nth-child(1) {
+    display: none;
   }
 }
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
@@ -2625,6 +2804,9 @@ body {
   }
   .marketplace__nft-item .section-4__item-title {
     font-size: 20px;
+  }
+  .ranking__artist-name {
+    font-size: 18px;
   }
 }
 @media (max-width: 420px) {
@@ -2836,6 +3018,20 @@ body {
   .marketplace__nft-item {
     height: 410px;
   }
+  .ranking__artist-name {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .ranking__stats-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .ranking__rank-artist {
+    gap: 10px;
+  }
+  .ranking__item-rank {
+    gap: 10px;
+  }
 }
 @media (max-width: 345px) {
   .main {
@@ -3043,5 +3239,28 @@ body {
   }
   .marketplace__nft-item {
     height: 420px;
+  }
+  .ranking__artist-name {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .ranking__stats-text {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .ranking__section-item {
+    padding: 12px 10px 12px 5px;
+  }
+  .ranking__item-rank {
+    gap: 0px;
+  }
+  .ranking__rank-artist {
+    gap: 5px;
+  }
+  .ranking__section-item:hover .ranking__rank-block {
+    background-color: transparent;
+  }
+  .ranking {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */
