@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body onLoad="initClock()">
     <div class="fullskrin">
         <header class="fullskrin__header">
             <div class="fullskrin__header-market">
@@ -739,8 +739,16 @@
                 </div>
             </div>
             <div class="section-6__block-clock">
-                <p class="section-6__clock-text">Auction ends in:</p>
-                <div class="section-6__clock-hours"></div>
+                <div class="area" id="area"></div>
+                <div id="timedate" class="timedate">
+                    <a id="mon">January</a>
+                    <a id="d">1</a>,
+                    <a id="y">0</a><br />
+                    <a id="h">12</a> :
+                    <a id="m">00</a>:
+                    <a id="s">00</a>:
+                    <a id="mi">000</a>
+                </div>
             </div>
         </div>
     </section>
@@ -753,8 +761,16 @@
                 </div>
                 <h2 class="section-6__info-title">Magic Mashrooms</h2>
                 <div class="section-6__block-clock">
-                    <p class="section-6__clock-text">Auction ends in:</p>
-                    <div class="section-6__clock-hours"></div>
+                    <div class="area" id="area"></div>
+                    <div id="timedate" class="timedate">
+                        <a id="mon">January</a>
+                        <a id="d">1</a>,
+                        <a id="y">0</a><br />
+                        <a id="h">12</a> :
+                        <a id="m">00</a>:
+                        <a id="s">00</a>:
+                        <a id="mi">000</a>
+                    </div>
                 </div>
                 <div class="section-6__info-button">
                     <img src="./Picture/Eye.png" alt="" class="section-6__button-img">
@@ -900,6 +916,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
