@@ -2053,10 +2053,31 @@ body {
         font-weight: 400;
         line-height: 140%;
     }
+
+    &__stats-txt {
+        color: var(--Text, #ff0000);
+        font-family: 'Space Mono', monospace;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
 }
 
 .ranking .marketplace__info {
     padding: 80px 0;
+}
+
+/*  */
+
+.timedate {
+    font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    text-align: left;
+    margin: 0px auto;
+    color: #fff;
+    border-left: 3px solid rgb(243, 25, 25);
+    padding: 20px;
+    width: 400px;
 }
 
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
@@ -3145,6 +3166,10 @@ body {
     }
 
     .ranking__item-stats .ranking__stats-text:nth-child(1) {
+        display: none;
+    }
+
+    .ranking__stats-txt {
         display: none;
     }
 }
