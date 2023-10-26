@@ -599,6 +599,35 @@ body {
         font-weight: 400;
         font-size: 28px;
     }
+
+    &__metamast-edition {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin-left: 20px;
+    }
+
+    &__create-card {
+        border: 1px solid rgba(162, 89, 255, 1);
+        border-radius: 20px;
+        width: 320px;
+        background-color: rgba(59, 59, 59, 1);
+        display: flex;
+        align-items: center;
+        padding: 20px 0px 20px 40px;
+        margin-top: 20px;
+    }
+
+    &__block-m {
+        margin-left: 60px;
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+    }
 }
 
 .s-fullskrin__block-img {
@@ -1593,6 +1622,11 @@ body {
     }
 }
 
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
 .section-7 {
     max-width: 1100px;
     margin: 0 auto;
@@ -1630,6 +1664,7 @@ body {
         align-items: center;
         padding: 0 50px;
         cursor: pointer;
+        height: 60px;
     }
 
     &__login-subscribe:hover &__subscribe-text {
@@ -1650,6 +1685,83 @@ body {
 
     &__login-input {
         border-radius: 20px;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__input[type="checkbox"]:checked~.section-7__label-span {
+        right: 45%;
+        top: 50%;
+        animation: male 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: 2s;
+
+        @keyframes male {
+            0% {
+                right: -50%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 45%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    &__span {
+        font-size: 170px;
+        right: -50%;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    &__label-span {
+        position: absolute;
+        transition: 0.7s;
+        right: -50%;
+        top: 50%;
+    }
+
+    &__input-span {
+        display: none;
+    }
+
+    &__input-check {
+        display: none;
+    }
+
+    &__input[type="checkbox"]:checked~.section-7__label-check {
+        right: 46%;
+        top: 52%;
+        animation: check 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: 2s;
+
+        @keyframes check {
+            0% {
+                right: 100%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 46%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    &__span-check {
+        font-size: 150px;
+        cursor: pointer;
+    }
+
+    &__label-check {
+        position: absolute;
+        top: 55%;
+        right: 100%;
+        transition: 0.7s;
+        z-index: 1;
     }
 
     &__info-title {
@@ -1869,6 +1981,69 @@ body {
     &__2-info-login {
         display: none;
     }
+}
+
+.section-7__2-input {
+    display: none;
+}
+
+.section-7__2-input[type="checkbox"]:checked~.section-7__2-span {
+    right: 40%;
+    animation: span 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @keyframes span {
+        0% {
+            right: -50%;
+            transform: rotate(0deg);
+        }
+
+        100% {
+            right: 40%;
+            transform: rotate(720deg);
+        }
+    }
+}
+
+.section-7__2-span {
+    position: absolute;
+    font-size: 150px;
+    right: -50%;
+    top: 40%;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.section-7__2-check {
+    font-size: 130px;
+}
+
+.section-7__m {
+    position: absolute;
+    top: 42%;
+    right: 130%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.section-7__2-input[type="checkbox"]:checked~.section-7__m {
+    right: 42%;
+    animation: line 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @keyframes line {
+        0% {
+            right: 130%;
+            transform: rotate(0deg);
+        }
+
+        100% {
+            right: 42%;
+            transform: rotate(720deg);
+        }
+    }
+}
+
+.section-7__n {
+    display: none;
 }
 
 .s-footer {
@@ -2316,6 +2491,15 @@ body {
     .marketplace__nft-item:nth-child(3) {
         display: none;
     }
+
+    .wallet-img {
+        width: 500px;
+    }
+
+    .fullskrin__metamask {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -2586,6 +2770,83 @@ body {
         justify-content: center;
     }
 
+    .section-7__input {
+        display: none;
+    }
+
+    .section-7__input [type="checkbox"]:checked~.section-7__label-span {
+        right: 45%;
+        top: 50%;
+        animation: male 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: 2s;
+
+        @keyframes male {
+            0% {
+                right: -50%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 45%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    .section-7__span {
+        font-size: 170px;
+        right: -50%;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    .section-7__label-span {
+        position: absolute;
+        transition: 0.7s;
+        right: -50%;
+        top: 50%;
+    }
+
+    .section-7__input-span {
+        display: none;
+    }
+
+    .section-7__input-check {
+        display: none;
+    }
+
+    .section-7__input[type="checkbox"]:checked~.section-7__label-check {
+        right: 46%;
+        top: 52%;
+        animation: check 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: 2s;
+
+        @keyframes check {
+            0% {
+                right: 100%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 46%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    .section-7__span-check {
+        font-size: 150px;
+        cursor: pointer;
+    }
+
+    .section-7__label-check {
+        position: absolute;
+        top: 55%;
+        right: 100%;
+        transition: 0.7s;
+        z-index: 1;
+    }
+
     .section-7__box-info {
         width: 350px;
     }
@@ -2620,6 +2881,20 @@ body {
 
     .marketplace__nft-item {
         height: 470px;
+    }
+
+    .wallet-img {
+        width: 400px;
+    }
+
+    .fullskrin__metamask {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fullskrin__create-card {
+        padding: 10px 0px 10px 40px;
+        width: 270px;
     }
 }
 
@@ -3135,6 +3410,22 @@ body {
     .footer__body {
         margin: 0px;
     }
+
+    .section-7__2-check {
+        top: 42%;
+    }
+
+    .fullskrin__block-m {
+        margin: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 330px;
+    }
+
+    .fullskrin__create-card {
+        width: 320px;
+        padding: 20px 0px 20px 40px;
+    }
 }
 
 @media (max-width: 754px) {
@@ -3426,6 +3717,38 @@ body {
 
     .ranking__artist-name {
         font-size: 18px;
+    }
+
+    .section-7__2-input[type="checkbox"]:checked~.section-7__2-check {
+        right: 38%;
+
+        @keyframes line {
+            0% {
+                right: 130%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 38%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    .section-7__2-input[type="checkbox"]:checked~.section-7__2-span {
+        right: 35%;
+
+        @keyframes span {
+            0% {
+                right: -50%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 35%;
+                transform: rotate(720deg);
+            }
+        }
     }
 }
 
@@ -3728,6 +4051,27 @@ body {
 
     .section-6__block-clock {
         width: 300px;
+    }
+
+    .section-7__2-check {
+        font-size: 120px;
+    }
+
+    .section-7__2-span {
+        font-size: 140px;
+    }
+
+    .wallet-img {
+        width: 100%;
+    }
+
+    .fullskrin__create-card {
+        width: 270px;
+        padding: 10px 0px 10px 20px;
+    }
+
+    .fullskrin__metamast-edition {
+        font-size: 18px;
     }
 }
 
@@ -4053,5 +4397,59 @@ body {
 
     .timedate {
         padding: 0px 0px 0px 20px;
+    }
+
+    .section-7__2-input[type="checkbox"]:checked~.section-7__2-check {
+        right: 35%;
+
+        @keyframes line {
+            0% {
+                right: 130%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 35%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    .section-7__2-input[type="checkbox"]:checked~.section-7__2-span {
+        right: 30%;
+
+        @keyframes span {
+            0% {
+                right: -50%;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                right: 30%;
+                transform: rotate(720deg);
+            }
+        }
+    }
+
+    .section-7__2-check {
+        font-size: 100px;
+    }
+
+    .section-7__2-span {
+        font-size: 120px;
+    }
+
+    .fullskrin__block-m {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .fullskrin__create-card {
+        width: 250px;
+    }
+
+    .fullskrin__block-box {
+        display: flex;
+        align-items: flex-start;
     }
 }
