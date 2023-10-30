@@ -1030,6 +1030,10 @@ body {
         filter: drop-shadow(0px 0px 10px #eb6274);
     }
 
+    &__a {
+        margin-top: 30px;
+    }
+
     &__creator-number {
         position: absolute;
         width: 30px;
@@ -1619,6 +1623,26 @@ body {
 
     &__2-block &__info-title {
         font-size: 45px;
+    }
+
+    &__clock-button {
+        background-color: rgba(162, 89, 255, 1);
+        max-width: 240px;
+        height: 60px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
     }
 }
 
@@ -2329,6 +2353,190 @@ body {
     font-size: 20px;
 }
 
+.nft {
+    &__info {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info-block {
+        max-width: 600px;
+    }
+
+    &__addition-created {
+        margin-top: 30px;
+    }
+
+    &__created-block {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    &__block-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    &__addition-description {
+        margin-top: 30px;
+    }
+
+    &__addition-details {
+        margin-top: 30px;
+    }
+
+    &__details-box {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__addition-tags {
+        margin-top: 30px;
+    }
+
+    &__tags-block {
+        margin-top: 20px;
+        max-width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tags-item {
+        background-color: rgba(59, 59, 59, 1);
+        padding: 15px 30px;
+        border-radius: 20px;
+    }
+
+    &__headline-title {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 51px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: capitalize;
+    }
+
+    &__headline-date {
+        color: var(--caption-label-text, #858584);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+
+    &__created-by {
+        color: #858584;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    &__block-text {
+        color: #FFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin-left: 12px;
+    }
+
+    &__description-title {
+        color: #858584;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    &__description-text {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-top: 10px;
+    }
+
+    &__details-title {
+        color: #858584;
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    &__details-text {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-left: 10px;
+    }
+
+    &__description-text {
+        color: var(--White, #FFF);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    &__tags-title {
+        color: #858584;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+
+    &__tags-text {
+        color: #FFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+}
+
+.page-img {
+    margin-top: 20px;
+}
+
+.nft__info .section-6__block-clock {
+    height: 250px;
+}
+
+.nft__info .section-6__clock-button {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
     .fullskrin {
@@ -2483,6 +2691,10 @@ body {
     }
 
     .ranking {
+        padding: 0 20px;
+    }
+
+    .nft {
         padding: 0 20px;
     }
 }
